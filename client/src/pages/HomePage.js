@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// import Layout from "./../components/Layout";
+import Layout from "./../components/Layout";
 // import { Row } from "antd";
 // import DoctorList from "../components/DoctorList";
 const HomePage = () => {
@@ -29,14 +29,11 @@ const HomePage = () => {
     getUserData();
   }, []);
   return (
-    // <Layout>
+    <Layout>
     <div>
-      <h1 className="text-center">Home Page</h1>{" "}
+      <h1>Home Page</h1>
     </div>
-    /* <Row>
-        {doctors && doctors.map((doctor) => <DoctorList doctor={doctor} />)}
-      </Row> */
-    // </Layout>
+    </Layout>
   );
 };
 
